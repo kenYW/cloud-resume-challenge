@@ -30,7 +30,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	if resp.StatusCode != 200 {
 		return events.APIGatewayProxyResponse{}, ErrNon200Response
 	}
-
+/*  ==below haven't use from youtube==
 	ip, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
@@ -39,9 +39,16 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	if len(ip) == 0 {
 		return events.APIGatewayProxyResponse{}, ErrNoIP
 	}
+*/
 
 	return events.APIGatewayProxyResponse{
-		Body:       fmt.Sprintf("Hello, %v", string(ip)),
+		
+		Headers: map[string]string{
+			*Access-Control-Allow-Origin*: "*"
+			*Access-Control-Allow-Methods*: "*"
+			*Access-Control-Allow-Headers*: "*"
+		}
+		Body:       fmt.Sprintf(*{ \*count\* : \*2\*}*),  
 		StatusCode: 200,
 	}, nil
 }
