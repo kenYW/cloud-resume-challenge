@@ -454,6 +454,15 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="assets/js/plugins.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        <!-- JAVASCRIPTS - visit counter (youtube) -- 下面replaceme 還沒用// * data.count 需要改 -->
+        <script>
+            fetch(' https://hduuzqjf31.execute-api.ap-northeast-1.amazonaws.com/Prod')
+                .then(response => response.json())
+                .then(data) => {
+                    document.getElementById('replaceme').innerText = data.count
+                }
+        </script>
    
    
     </body> 
