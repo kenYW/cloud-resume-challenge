@@ -25,6 +25,14 @@
         <!-- STYLESHEETS -->
         <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- JAVASCRIPTS - visit counter (youtube) -- 下面replaceme 還沒用// * data.count 需要改 -->
+        <script>
+            fetch('https://hduuzqjf31.execute-api.ap-northeast-1.amazonaws.com/Prod/get')
+                .then(response => response.json())
+                .then((data) => {
+                    document.getElementById('replaceme').innerText = data.count
+                })
+        </script>
         
         
     </head>
@@ -32,7 +40,10 @@
    
     <body>
     
-       
+        
+
+      
+
         <!-- PRELOADER -->
         <div class="preloader">
            
@@ -79,7 +90,13 @@
                         <!-- ANIMATION CONTAINER -->
                         <div class="animation-container animation-fade-left" data-animation-delay="300">
                            
-                            <p class="subline">Never say never! this is the try out of my web.! will announce soon oh wow second try sync, the third try with invalidatoin /index.html</p>
+                            <p class="subline">Never say never! this is the try out of my web.
+                                ! will announce soon oh wow second try sync, 
+                                the third try with invalidatoin /index.html <br>
+
+                                Visitors:
+                                    <span id= "replaceme" />
+                            </p>
                             
                         </div>
                         <!-- /ANIMATION CONTAINER -->
@@ -455,14 +472,8 @@
         <script type="text/javascript" src="assets/js/plugins.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
         
-        <!-- JAVASCRIPTS - visit counter (youtube) -- 下面replaceme 還沒用// * data.count 需要改 -->
-        <script>
-            fetch(' https://hduuzqjf31.execute-api.ap-northeast-1.amazonaws.com/Prod')
-                .then(response => response.json())
-                .then(data) => {
-                    document.getElementById('replaceme').innerText = data.count
-                }
-        </script>
+        
+        
    
    
     </body> 
