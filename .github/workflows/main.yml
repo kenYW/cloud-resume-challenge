@@ -16,4 +16,3 @@ jobs:
         run: cd cloud-resume-challenge/get-function && go test -v ./ && cd ../../
       - name: test put-function
         run: cd cloud-resume-challenge/put-function && go test -v ./ && cd ../../
-
