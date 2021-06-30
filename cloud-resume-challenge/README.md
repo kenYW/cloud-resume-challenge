@@ -1,5 +1,34 @@
 # cloud-resume-challenge
 
+A serverless resume website with view counter and CI/CD (Github) using AWS, inspired from the [Forrest Brazeal's ](https://aws.amazon.com/developer/community/heroes/forrest-brazeal/) [cloud resume challenge](https://cloudresumechallenge.dev/instructions/)
+
+
+# Architecture
+
+
+
+
+
+
+
+
+
+# Try & Error
+
+* Bucket name (S3) must be as same as domain name
+* (CloudFront) Orgin domain name must use s3 endpoint without "https:// "
+* (ACM) mannual create as ACM only support in "us-east-1" region, may use nested clofrmation for IaC
+* (IaC) always make change only in template not directly in service.
+* (Cost) aware the endpoint charge, to see bill information.
+
+
+
+
+
+
+
+# cloud-resume-challenge
+
 This is a sample template for cloud-resume-challenge - Below is a brief explanation of what we have generated for you:
 
 ```bash
