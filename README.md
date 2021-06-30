@@ -9,7 +9,7 @@ A serverless resume website with view counter and CI/CD (Github) using AWS, insp
 ![image of diagram](https://github.com/kenYW/cloud-resume-challenge/blob/main/cloud-resume-challenge/cloud_resume_challenge.png)
 
 
-## Service
+### Service
 
 * Serverless Application model (SAM) - as Infrastructure as Code
 * CloudFront - to secure visitor cannot access s3 directly
@@ -21,7 +21,7 @@ A serverless resume website with view counter and CI/CD (Github) using AWS, insp
 
 
 
-## Try & Error
+### Try & Error
 
 * Bucket name (S3) must be as same as domain name
 * (CloudFront) Orgin domain name must use s3 endpoint without "https:// "
