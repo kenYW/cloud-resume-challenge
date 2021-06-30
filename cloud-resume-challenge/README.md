@@ -9,6 +9,14 @@ A serverless resume website with view counter and CI/CD (Github) using AWS, insp
 ![image of diagram](https://github.com/kenYW/cloud-resume-challenge/blob/main/cloud-resume-challenge/cloud_resume_challenge.png)
 
 
+## Service
+
+* Serverless Application model (SAM) - as Infrastructure as Code
+* CloudFront - to secure visitor cannot access s3 directly
+* Github - version control and make it CI/CD 
+* Lambda - to build visitor count by fetching functions
+* S3 - host static website
+* Golang - for lambda code
 
 
 
@@ -23,7 +31,8 @@ A serverless resume website with view counter and CI/CD (Github) using AWS, insp
 
 
 
+## Reference
 
-
+Thanks to the awesome tutorial from [Open up the Cloud](https://www.youtube.com/channel/UCAklaE5D59xWtip-3Jwa7xA)
 
 
