@@ -6,8 +6,7 @@ A serverless resume website with view counter and CI/CD (Github) using AWS, insp
 ## Architecture
 
 
-![image of diagram]
-(https://github.com/kenYW/cloud-resume-challenge/blob/main/cloud-resume-challenge/cloud_resume_challenge.png)
+![image of diagram](https://github.com/kenYW/cloud-resume-challenge/blob/main/cloud-resume-challenge/cloud_resume_challenge.png)
 
 
 
